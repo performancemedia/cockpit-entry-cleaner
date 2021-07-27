@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  cms:
+    image: agentejo/cockpit
+    ports:
+      - 8080:80
+    networks:
+      - cockpit
+    volumes:
+      - ./PmPipelines:/var/www/html/addons/PmPipelines
+      - ./pipelines.json:/var/www/html/storage/pipelines.json
+
+networks:
+  cockpit:
+    driver: bridge
