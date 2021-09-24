@@ -2,7 +2,6 @@
 
 namespace EntryCleaner\Controller;
 
-
 use MongoHybrid\Client;
 use MongoLite\Collection;
 use MongoLite\Cursor;
